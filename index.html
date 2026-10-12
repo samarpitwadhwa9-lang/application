@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee and Cuddles</title>
+  <meta name="description" content="Coffee and Cuddles is a quiet, premium specialty coffee cafe in Dehradun, offering world-inspired pours, warm hospitality, and thoughtful spaces to slow down.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand" aria-label="Coffee and Cuddles home">
+        <span class="brand-mark">C</span>
+        <span class="brand-text">Coffee and Cuddles</span>
+      </a>
+      <div class="nav-links">
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#space">The Space</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#visit">Visit Us</a>
+      </div>
+      <a href="tel:+9198XXXXXX" class="nav-call">Call Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Dehradun • Rajpur Road</p>
+          <h1>Coffee and Cuddles</h1>
+          <p class="tagline">Every cup, a different corner of the world</p>
+          <div class="hero-actions">
+            <a href="#reservations" class="button primary">Reserve a Table</a>
+            <span class="status-badge" id="statusBadge">Open now</span>
+          </div>
+          <p class="welcome-line">A quiet room for slow coffee, good company and a little time away from the rush.</p>
+          <p class="hours-line">Opening hours: 8:00 AM to 10:00 PM, all seven days</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story section container">
+      <div class="section-heading">
+        <p class="eyebrow">Our Story</p>
+        <h2>Two travellers, one long pause.</h2>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-text">
+          <p>Digvijay and Vaishnavi met at JNU, where a library correction led to years of long conversations, late chai and a life shaped by travel. After twenty years in the Indian Foreign Service, they moved through more than sixty countries, carrying a growing love for coffee and the rituals that made each place feel like home.</p>
+          <p>In every city, they began the day the same way: finding the best cup in town. A tiny roastery in Addis Ababa, a quiet bar in Trieste, a rooftop in Medellin, a farmhouse in Coorg at sunrise. What began as a habit became a way of understanding a place.</p>
+          <p>Now they have returned to Dehradun, where the hills, the cool mornings and the unhurried pace feel like the right place to stop. Coffee and Cuddles is their small corner of the world: warm, thoughtful and open to slow, generous mornings and evenings.</p>
+        </div>
+
+        <div class="founder-cards">
+          <article class="founder-card">
+            <div class="portrait portrait-digvijay">
+              <span>DK</span>
+            </div>
+            <div class="founder-meta">
+              <h3>Digvijay Kaushal</h3>
+              <p>Co-founder</p>
+            </div>
+          </article>
+
+          <article class="founder-card">
+            <div class="portrait portrait-vaishnavi">
+              <span>VS</span>
+            </div>
+            <div class="founder-meta">
+              <h3>Vaishnavi Sharma</h3>
+              <p>Co-founder</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="eyebrow">The Menu</p>
+          <h2>Every cup carries a story.</h2>
+        </div>
+
+        <div class="menu-toolbar">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="espresso" type="button">Espresso</button>
+          <button class="filter-btn" data-filter="milk" type="button">Espresso &amp; Milk</button>
+          <button class="filter-btn" data-filter="signature" type="button">Signature</button>
+          <button class="filter-btn" data-filter="slow" type="button">Slow Brew</button>
+          <button class="filter-btn" data-filter="cold" type="button">Cold</button>
+          <button class="filter-btn" data-filter="dessert" type="button">Dessert</button>
+          <button class="filter-btn" data-filter="house" type="button">House Blend</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item" data-category="espresso">
+            <div class="menu-head">
+              <h3>Espresso</h3>
+              <span class="chip">Espresso</span>
+            </div>
+            <p class="tasting-note">Dark chocolate, caramel, a clean finish</p>
+            <p class="inspired">Inspired by Milan, Italy</p>
+          </article>
+
+          <article class="menu-item" data-category="espresso">
+            <div class="menu-head">
+              <h3>Doppio</h3>
+              <span class="chip">Espresso</span>
+            </div>
+            <p class="tasting-note">Double shot, rich and syrupy</p>
+            <p class="inspired">Inspired by Trieste, Italy</p>
+          </article>
+
+          <article class="menu-item" data-category="espresso">
+            <div class="menu-head">
+              <h3>Americano</h3>
+              <span class="chip">Espresso</span>
+            </div>
+            <p class="tasting-note">Smooth and bright, brewed long</p>
+            <p class="inspired">Inspired by New York, USA</p>
+          </article>
+
+          <article class="menu-item" data-category="espresso">
+            <div class="menu-head">
+              <h3>Ristretto</h3>
+              <span class="chip">Espresso</span>
+            </div>
+            <p class="tasting-note">Short and concentrated, with a sweet edge</p>
+            <p class="inspired">Inspired by Rome, Italy</p>
+          </article>
+
+          <article class="menu-item" data-category="milk">
+            <div class="menu-head">
+              <h3>Cortado</h3>
+              <span class="chip">Espresso &amp; Milk</span>
+            </div>
+            <p class="tasting-note">Equal parts espresso and warm milk</p>
+            <p class="inspired">Inspired by Madrid, Spain</p>
+          </article>
+
+          <article class="menu-item" data-category="milk">
+            <div class="menu-head">
+              <h3>Flat White</h3>
+              <span class="chip">Espresso &amp; Milk</span>
+            </div>
+            <p class="tasting-note">Velvety microfoam over a double shot</p>
+            <p class="inspired">Inspired by Melbourne, Australia</p>
+          </article>
+
+          <article class="menu-item" data-category="milk">
+            <div class="menu-head">
+              <h3>Cappuccino</h3>
+              <span class="chip">Espresso &amp; Milk</span>
+            </div>
+            <p class="tasting-note">Balanced, with a thick cloud of foam</p>
+            <p class="inspired">Inspired by Florence, Italy</p>
+          </article>
+
+          <article class="menu-item" data-category="milk">
+            <div class="menu-head">
+              <h3>Caffe Latte</h3>
+              <span class="chip">Espresso &amp; Milk</span>
+            </div>
+            <p class="tasting-note">Mellow, creamy and comforting</p>
+            <p class="inspired">Inspired by Vienna, Austria</p>
+          </article>
+
+          <article class="menu-item" data-category="milk">
+            <div class="menu-head">
+              <h3>Mocha</h3>
+              <span class="chip">Espresso &amp; Milk</span>
+            </div>
+            <p class="tasting-note">Espresso, dark chocolate and steamed milk</p>
+            <p class="inspired">Inspired by Yemen</p>
+          </article>
+
+          <article class="menu-item" data-category="signature">
+            <div class="menu-head">
+              <h3>Spanish Latte</h3>
+              <span class="chip">Signature</span>
+            </div>
+            <p class="tasting-note">Sweet condensed milk over espresso</p>
+            <p class="inspired">Inspired by Valencia, Spain</p>
+          </article>
+
+          <article class="menu-item" data-category="signature">
+            <div class="menu-head">
+              <h3>Kerala Filter Kaapi</h3>
+              <span class="chip">Signature</span>
+            </div>
+            <p class="tasting-note">Strong decoction with frothed milk, served in a steel tumbler</p>
+            <p class="inspired">Inspired by Kerala, India</p>
+          </article>
+
+          <article class="menu-item" data-category="signature">
+            <div class="menu-head">
+              <h3>Vietnamese Egg Coffee</h3>
+              <span class="chip">Signature</span>
+            </div>
+            <p class="tasting-note">Whipped egg cream over strong robusta</p>
+            <p class="inspired">Inspired by Hanoi, Vietnam</p>
+          </article>
+
+          <article class="menu-item" data-category="signature">
+            <div class="menu-head">
+              <h3>Turkish Coffee</h3>
+              <span class="chip">Traditional</span>
+            </div>
+            <p class="tasting-note">Fine grind, thick and aromatic, served with a sweet</p>
+            <p class="inspired">Inspired by Istanbul, Turkey</p>
+          </article>
+
+          <article class="menu-item" data-category="signature">
+            <div class="menu-head">
+              <h3>Ethiopian Coffee Ceremony</h3>
+              <span class="chip">Traditional</span>
+            </div>
+            <p class="tasting-note">Floral, fruity and spiced, poured slowly from a clay pot</p>
+            <p class="inspired">Inspired by Addis Ababa, Ethiopia</p>
+          </article>
+
+          <article class="menu-item" data-category="slow">
+            <div class="menu-head">
+              <h3>V60 Pour Over</h3>
+              <span class="chip">Slow Brew</span>
+            </div>
+            <p class="tasting-note">Clean, delicate and fruity</p>
+            <p class="inspired">Inspired by Tokyo, Japan</p>
+          </article>
+
+          <article class="menu-item" data-category="slow">
+            <div class="menu-head">
+              <h3>French Press</h3>
+              <span class="chip">Slow Brew</span>
+            </div>
+            <p class="tasting-note">Full-bodied and earthy</p>
+            <p class="inspired">Inspired by Paris, France</p>
+          </article>
+
+          <article class="menu-item" data-category="slow">
+            <div class="menu-head">
+              <h3>Aeropress</h3>
+              <span class="chip">Slow Brew</span>
+            </div>
+            <p class="tasting-note">Crisp and sweet with low bitterness</p>
+            <p class="inspired">Inspired by Stockholm, Sweden</p>
+          </article>
+
+          <article class="menu-item" data-category="cold">
+            <div class="menu-head">
+              <h3>Cold Brew</h3>
+              <span class="chip">Cold</span>
+            </div>
+            <p class="tasting-note">Steeped for 18 hours, smooth and low in acidity</p>
+            <p class="inspired">Inspired by Brooklyn, USA</p>
+          </article>
+
+          <article class="menu-item" data-category="cold">
+            <div class="menu-head">
+              <h3>Iced Latte</h3>
+              <span class="chip">Cold</span>
+            </div>
+            <p class="tasting-note">Espresso poured over ice and cold milk</p>
+            <p class="inspired">Inspired by Seoul, South Korea</p>
+          </article>
+
+          <article class="menu-item" data-category="dessert">
+            <div class="menu-head">
+              <h3>Affogato</h3>
+              <span class="chip">Dessert</span>
+            </div>
+            <p class="tasting-note">Hot espresso poured over vanilla gelato</p>
+            <p class="inspired">Inspired by Naples, Italy</p>
+          </article>
+
+          <article class="menu-item" data-category="house">
+            <div class="menu-head">
+              <h3>Hills Special</h3>
+              <span class="chip">House Blend</span>
+            </div>
+            <p class="tasting-note">Smoky, nutty and honeyed, made with beans from Coorg</p>
+            <p class="inspired">Inspired by Dehradun, India</p>
+          </article>
+        </div>
+
+        <p class="also-on-menu">Also on the menu: tea, hot chocolate, fresh pastries, sandwiches and a few light plates.</p>
+      </div>
+    </section>
+
+    <section id="space" class="space section container">
+      <div class="section-heading">
+        <p class="eyebrow">The Space</p>
+        <h2>Quiet corners and warm light.</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card tall">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Coffee on the counter">
+        </figure>
+        <figure class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Cafe interior seating">
+        </figure>
+        <figure class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Terrace with valley view">
+        </figure>
+        <figure class="gallery-card wide">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" alt="Coffee beans and brewing setup">
+        </figure>
+      </div>
+    </section>
+
+    <section id="reservations" class="reservations section">
+      <div class="container form-wrap">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Reservations</p>
+          <h2>Book a table for your next slow morning.</h2>
+        </div>
+
+        <form id="reservationForm" novalidate>
+          <div class="form-grid">
+            <label>
+              <span>Full name</span>
+              <input type="text" id="fullName" name="fullName" required>
+              <small class="error" id="fullNameError"></small>
+            </label>
+
+            <label>
+              <span>Phone number</span>
+              <input type="tel" id="phone" name="phone" inputmode="numeric" maxlength="10" required>
+              <small class="error" id="phoneError"></small>
+            </label>
+
+            <label>
+              <span>Email address</span>
+              <input type="email" id="email" name="email">
+              <small class="error" id="emailError"></small>
+            </label>
+
+            <label>
+              <span>Date</span>
+              <input type="date" id="date" name="date" required>
+              <small class="error" id="dateError"></small>
+            </label>
+
+            <label>
+              <span>Time</span>
+              <input type="time" id="time" name="time" min="08:00" max="21:30" required>
+              <small class="error" id="timeError"></small>
+            </label>
+
+            <label>
+              <span>Number of guests</span>
+              <input type="number" id="guests" name="guests" min="1" max="12" required>
+              <small class="error" id="guestsError"></small>
+            </label>
+          </div>
+
+          <fieldset class="choice-group">
+            <legend>Seating preference</legend>
+            <label><input type="radio" name="seating" value="Main room"> Main room</label>
+            <label><input type="radio" name="seating" value="Window bar"> Window bar</label>
+            <label><input type="radio" name="seating" value="Terrace"> Terrace</label>
+            <label><input type="radio" name="seating" value="No preference"> No preference</label>
+            <small class="error" id="seatingError"></small>
+          </fieldset>
+
+          <div class="form-row two-col">
+            <label>
+              <span>Occasion</span>
+              <select id="occasion" name="occasion">
+                <option value="">Select</option>
+                <option>Just coffee</option>
+                <option>Date</option>
+                <option>Birthday</option>
+                <option>Business meeting</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label class="checkbox-row">
+              <input type="checkbox" id="petFriendly" name="petFriendly">
+              <span>Bringing a pet</span>
+            </label>
+          </div>
+
+          <label>
+            <span>Special requests</span>
+            <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Window seat, birthday note, dietary requests..."></textarea>
+          </label>
+
+          <label class="checkbox-row consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span>Consent to be contacted by call or WhatsApp</span>
+          </label>
+          <small class="error" id="consentError"></small>
+
+          <div id="petMessage" class="pet-message" aria-live="polite"></div>
+
+          <button type="submit" class="button primary submit-btn">Request Reservation</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="visit" class="visit section container">
+      <div class="section-heading">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Come by for a quieter kind of coffee break.</h2>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-card details">
+          <p><strong>Address:</strong> Rajpur Road, Dehradun, Uttarakhand</p>
+          <p><strong>Opening hours:</strong> 8:00 AM to 10:00 PM, all seven days</p>
+          <p><strong>Phone:</strong> <a href="tel:+9198XXXXXX">+91 98XXX XXXXX</a></p>
+          <p><strong>Email:</strong> <a href="mailto:hello@coffeeandcuddles.in">hello@coffeeandcuddles.in</a></p>
+          <p><strong>Instagram:</strong> <a href="#">@coffeeandcuddles</a></p>
+        </div>
+
+        <div class="visit-card map-placeholder">
+          <span>Map Placeholder</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2025 Coffee and Cuddles. Slow coffee, softly spoken.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
